@@ -1,0 +1,21 @@
+Using dictionary to replace a substring with a new substring:  
+* first create a dictionary with keys are the old string and values are the new string; 
+* Interate through the string, if any matches to one of the key, replace it with the value
+Matching elements of the same index number from multiple lists
+* First create an empty dict
+* The index number is the unique identifier between groups of elements     
+* Starting with first element then adding the second element of the same index, and so on till all memebers of the group has been collected from all the lists. 
+To remove all duplicate elements of a list, we can use set() since a set only includes unique elements. But to preserve the order of the list, we use the loop technique to filter the list
+Use dictionary count the number of times an element appear in a list
+* Create an empty dict
+* iterate through the list, if the element belongs to collection of keys, increase the value by 1, else add the element as a new key with value equal to 1
+* This can be done using Defaultdict
+Finding the max, min value of a list and its associated elements of the same index in other list
+* The technique is assinging 0 to the target variable named max/min
+* Assign a random value to a the variable representing the associated element
+* Iterate through the list of value, compare each to the target variable, assign the associated element to the other variable.
+Using dictionary to assign a group of values of a list into different scale. The dictionary has each scale's name as key and upper boundaries as values
+* First: create the dictionary of rating scale
+* Second: create a target dictionary with keys as rating scales' name and values are empty lists
+* Thrid: iterate through the original list, compare each value to upper and lower boundary of the rating scale to assign them to appropriate scales
+
