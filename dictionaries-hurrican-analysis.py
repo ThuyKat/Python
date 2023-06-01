@@ -163,4 +163,7 @@ for k, v in dict_main.items():
         dam_dict[i+1].append(v)
 print(dam_dict)
 
-       
+with open('file.txt', 'w', newline='\n') as file1:
+    file1.write('Line 1\nLine 2\nLine 3')
+    print(file1.read())
+
