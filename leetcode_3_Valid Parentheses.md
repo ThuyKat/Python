@@ -18,3 +18,7 @@ To solve this:
 
 This approach allows us to validate the brackets by finding the innermost pair and moving to the next outer pair for validation.
 
+IMPROVEMENT:
+1. Instead of removing the last element of "check" from "check", we use a pointer to point to the index of the bracket in consideration.
+2. Pointer = pointer +1 if we iterate through an open bracket, and pointer = pointer -1 if we iterate through a close bracket
+3. So after a close bracket went through step 3 as above, by adding pointer = pointer -1, we now focus on testing the next open bracket which is the one at index = pointer -1 
